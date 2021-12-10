@@ -5,12 +5,12 @@ const Card = () => {
 
 
   const FilterItem = (categoryItem) => {
-     const updateItem = data.filter((item) => {
-         return(
-             item.category === categoryItem
-         )
-     })
-     setState(updateItem)
+    const updateItem = data.filter((item) => {
+      return (
+        item.category === categoryItem
+      )
+    })
+    setState(updateItem)
   }
 
 
@@ -20,16 +20,16 @@ const Card = () => {
       <div className="btnList">
         <ul>
           <li>
-            <a className="active" href="#" onClick={()=>{FilterItem("juice")}}>Fruits</a>
+            <a className="active" href="#" onClick={() => { FilterItem("juice") }}>Fruits</a>
           </li>
           <li>
-            <a href="#" onClick={()=>{FilterItem("fruits")}} >Juice</a>
+            <a href="#" onClick={() => { FilterItem("fruits") }} >Juice</a>
           </li>
           <li>
-            <a href="#" onClick={()=>{FilterItem("Vegetables")}} >Vegetables</a>
+            <a href="#" onClick={() => { FilterItem("Vegetables") }} >Vegetables</a>
           </li>
           <li>
-            <a href="#" onClick={()=>{ setState(data)}}>All</a>
+            <a href="#" onClick={() => { setState(data) }}>All</a>
           </li>
         </ul>
       </div>
